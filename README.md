@@ -1,18 +1,115 @@
-## Getting Started
+# 🛒 Smart Mart Billing System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A modern JavaFX-based supermarket billing system with separate Admin and Customer interfaces.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+# ✨ Features
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🔐 Login System
+- Admin Login
+- Customer Login
+- Role-based navigation
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 👨‍💼 Admin Panel
+- Dashboard UI
+- Revenue Cards
+- Orders Analytics
+- Inventory Management
+- Add Products Dynamically
+- Stock Display
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🛍️ Customer Interface
+- Product Shopping UI
+- Dynamic Cart System
+- Quantity Increment & Decrement
+- Auto Total Calculation
+- Product Images
+- Payment Workflow
+
+---
+
+## 💳 Payment Module
+- Payment Summary
+- GST Calculation
+- Total Amount Calculation
+- Payment Success Screen
+
+---
+
+## 🧾 Receipt Generation
+- Receipt Page
+- Purchased Items Summary
+- Date & Time
+- Total Bill
+
+---
+
+# 🛠️ Tech Stack
+
+- Java
+- JavaFX
+- CSS
+- FXML
+- VS Code
+
+---
+
+# 🔑 Login Credentials
+
+## Admin
+
+Username: `admin`  
+Password: `admin123`
+
+---
+
+## Customer
+
+Username: `customer`  
+Password: `customer123`
+
+---
+
+# 📸 Screenshots
+
+## 🔐 Login Page
+
+(Add Screenshot Here)
+
+---
+
+## 👨‍💼 Admin Dashboard
+
+(Add Screenshot Here)
+
+---
+
+## 🛒 Customer Interface
+
+(Add Screenshot Here)
+
+---
+
+## 💳 Payment Page
+
+(Add Screenshot Here)
+
+---
+
+## 🧾 Receipt Page
+
+(Add Screenshot Here)
+
+---
+
+# 🚀 How To Run
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/KankanalaSahithi/Supermarket-Billing-System
