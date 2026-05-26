@@ -1,4 +1,4 @@
-# 🛒 Smart Mart Billing System
+# 🛒 Supermarket Billing System
 
 A modern JavaFX-based supermarket billing system with separate Admin and Customer interfaces.
 
