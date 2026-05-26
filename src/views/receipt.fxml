@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700"
+            prefWidth="1200"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.ReceiptController"
+            stylesheets="@../styles/receipt.css">
+
+    <children>
+
+        <!-- Receipt Card -->
+
+        <VBox layoutX="350"
+              layoutY="60"
+              prefWidth="500"
+              prefHeight="580"
+              spacing="18"
+              styleClass="receipt-card">
+
+            <children>
+
+                <Label text="PAYMENT SUCCESSFUL"
+                       styleClass="success-text"/>
+
+                <Label text="SMART MART"
+                       styleClass="store-name"/>
+
+                <Separator/>
+
+                <Label fx:id="dateLabel"
+                       text="Date"
+                       styleClass="receipt-text"/>
+
+                <Label fx:id="itemsLabel"
+                       text="Items"
+                       styleClass="receipt-text"/>
+
+                <Label fx:id="subtotalLabel"
+                       text="Subtotal"
+                       styleClass="receipt-text"/>
+
+                <Label fx:id="gstLabel"
+                       text="GST"
+                       styleClass="receipt-text"/>
+
+                <Separator/>
+
+                <Label fx:id="totalLabel"
+                       text="Total"
+                       styleClass="total-text"/>
+
+                <Pane VBox.vgrow="ALWAYS"/>
+
+                <Label text="Thank You For Shopping ❤️"
+                       styleClass="thank-text"/>
+
+                <Button text="Back To Shopping"
+                        onAction="#backToShopping"
+                        styleClass="back-btn"/>
+
+            </children>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>

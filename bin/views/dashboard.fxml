@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650"
+            prefWidth="1100"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../styles/dashboard.css">
+
+    <children>
+
+        <!-- Sidebar -->
+
+        <VBox prefHeight="650"
+              prefWidth="220"
+              styleClass="sidebar">
+
+            <children>
+
+                <Label text="SMART MART"
+                       styleClass="logo"/>
+
+                <Button text="Dashboard" styleClass="menu-btn"/>
+                <Button text="Inventory" styleClass="menu-btn"/>
+                <Button text="Customers" styleClass="menu-btn"/>
+                <Button text="Analytics" styleClass="menu-btn"/>
+                <Button text="Reports" styleClass="menu-btn"/>
+
+            </children>
+
+        </VBox>
+
+        <!-- Main Area -->
+
+        <AnchorPane layoutX="220"
+                    prefHeight="650"
+                    prefWidth="880"
+                    styleClass="main-area">
+
+            <children>
+
+                <!-- Top Bar -->
+
+                <HBox layoutX="30"
+                      layoutY="20"
+                      prefWidth="820"
+                      prefHeight="60"
+                      styleClass="topbar">
+
+                    <children>
+
+                        <Label text="Dashboard"
+                               styleClass="heading"/>
+
+                    </children>
+
+                </HBox>
+
+                <!-- Statistics Cards -->
+
+                <HBox layoutX="30"
+                      layoutY="120"
+                      spacing="20">
+
+                    <children>
+
+                        <VBox prefWidth="180"
+                              prefHeight="120"
+                              styleClass="card">
+
+                            <children>
+
+                                <Label text="Total Sales"
+                                       styleClass="card-title"/>
+
+                                <Label text="₹ 24,500"
+                                       styleClass="card-value"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <VBox prefWidth="180"
+                              prefHeight="120"
+                              styleClass="card">
+
+                            <children>
+
+                                <Label text="Products"
+                                       styleClass="card-title"/>
+
+                                <Label text="320"
+                                       styleClass="card-value"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <VBox prefWidth="180"
+                              prefHeight="120"
+                              styleClass="card">
+
+                            <children>
+
+                                <Label text="Customers"
+                                       styleClass="card-title"/>
+
+                                <Label text="1,240"
+                                       styleClass="card-value"/>
+
+                            </children>
+
+                        </VBox>
+
+                    </children>
+
+                </HBox>
+
+            </children>
+
+        </AnchorPane>
+
+    </children>
+
+</AnchorPane>

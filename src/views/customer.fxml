@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="controllers.CustomerController"
+            prefHeight="700"
+            prefWidth="1200"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../styles/customer.css">
+
+    <children>
+
+        <!-- LEFT SIDE -->
+
+        <AnchorPane prefWidth="850"
+                    prefHeight="700"
+                    styleClass="main-area">
+
+            <children>
+
+                <!-- Heading -->
+
+                <Label layoutX="30"
+                       layoutY="20"
+                       text="Customer Shopping"
+                       styleClass="heading"/>
+
+                <!-- Search -->
+
+                <TextField layoutX="30"
+                           layoutY="80"
+                           prefWidth="300"
+                           prefHeight="40"
+                           promptText="Search Products..."
+                           styleClass="search-field"/>
+
+                <!-- Products -->
+
+                <FlowPane layoutX="30"
+                          layoutY="150"
+                          hgap="20"
+                          vgap="20"
+                          prefWidth="760">
+
+                    <children>
+
+                        <!-- Lays -->
+
+                        <VBox prefWidth="180"
+                              prefHeight="240"
+                              styleClass="product-card">
+
+                            <children>
+
+                                <ImageView fitHeight="100"
+                                           fitWidth="120"
+                                           preserveRatio="true">
+
+                                    <image>
+                                        <Image url="@../images/lays.png"/>
+                                    </image>
+
+                                </ImageView>
+
+                                <Label text="Lays"
+                                       styleClass="product-name"/>
+
+                                <Label text="₹20"
+                                       styleClass="product-price"/>
+
+                                <Button text="Add"
+                                        onAction="#addLays"
+                                        styleClass="cart-btn"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- Eggs -->
+
+                        <VBox prefWidth="180"
+                              prefHeight="240"
+                              styleClass="product-card">
+
+                            <children>
+
+                                <ImageView fitHeight="100"
+                                           fitWidth="120"
+                                           preserveRatio="true">
+
+                                    <image>
+                                        <Image url="@../images/eggs.png"/>
+                                    </image>
+
+                                </ImageView>
+
+                                <Label text="Fresh Eggs"
+                                       styleClass="product-name"/>
+
+                                <Label text="₹40"
+                                       styleClass="product-price"/>
+
+                                <Button text="Add"
+                                        onAction="#addEggs"
+                                        styleClass="cart-btn"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- Detergent -->
+
+                        <VBox prefWidth="180"
+                              prefHeight="240"
+                              styleClass="product-card">
+
+                            <children>
+
+                                <ImageView fitHeight="100"
+                                           fitWidth="120"
+                                           preserveRatio="true">
+
+                                    <image>
+                                        <Image url="@../images/det.png"/>
+                                    </image>
+
+                                </ImageView>
+
+                                <Label text="Detergent"
+                                       styleClass="product-name"/>
+
+                                <Label text="₹360"
+                                       styleClass="product-price"/>
+
+                                <Button text="Add"
+                                        onAction="#addDetergent"
+                                        styleClass="cart-btn"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- Soap -->
+
+                        <VBox prefWidth="180"
+                              prefHeight="240"
+                              styleClass="product-card">
+
+                            <children>
+
+                                <ImageView fitHeight="100"
+                                           fitWidth="120"
+                                           preserveRatio="true">
+
+                                    <image>
+                                        <Image url="@../images/joh.png"/>
+                                    </image>
+
+                                </ImageView>
+
+                                <Label text="Baby Soap"
+                                       styleClass="product-name"/>
+
+                                <Label text="₹40"
+                                       styleClass="product-price"/>
+
+                                <Button text="Add"
+                                        onAction="#addSoap"
+                                        styleClass="cart-btn"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- Crispello -->
+
+                        <VBox prefWidth="180"
+                              prefHeight="240"
+                              styleClass="product-card">
+
+                            <children>
+
+                                <ImageView fitHeight="100"
+                                           fitWidth="120"
+                                           preserveRatio="true">
+
+                                    <image>
+                                        <Image url="@../images/cris.png"/>
+                                    </image>
+
+                                </ImageView>
+
+                                <Label text="Crispello"
+                                       styleClass="product-name"/>
+
+                                <Label text="₹20"
+                                       styleClass="product-price"/>
+
+                                <Button text="Add"
+                                        onAction="#addCrispello"
+                                        styleClass="cart-btn"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- Potato -->
+
+                        <VBox prefWidth="180"
+                              prefHeight="240"
+                              styleClass="product-card">
+
+                            <children>
+
+                                <ImageView fitHeight="100"
+                                           fitWidth="120"
+                                           preserveRatio="true">
+
+                                    <image>
+                                        <Image url="@../images/pot.png"/>
+                                    </image>
+
+                                </ImageView>
+
+                                <Label text="Potato"
+                                       styleClass="product-name"/>
+
+                                <Label text="₹30"
+                                       styleClass="product-price"/>
+
+                                <Button text="Add"
+                                        onAction="#addPotato"
+                                        styleClass="cart-btn"/>
+
+                            </children>
+
+                        </VBox>
+
+                    </children>
+
+                </FlowPane>
+
+            </children>
+
+        </AnchorPane>
+
+        <!-- RIGHT CART PANEL -->
+
+        <VBox layoutX="850"
+              AnchorPane.topAnchor="0.0"
+              AnchorPane.bottomAnchor="0.0"
+              prefWidth="350"
+              styleClass="cart-panel">
+
+            <children>
+
+                <HBox alignment="CENTER_RIGHT">
+
+                <children>
+
+                    <Button text="Logout"
+                            onAction="#logout"
+                            styleClass="logout-btn"/>
+        
+                </children>
+
+            </HBox>
+
+                <Label text="Your Cart"
+                       styleClass="cart-heading"/>
+
+                <!-- Dynamic Cart -->
+
+                <VBox fx:id="cartItemsBox"
+                      spacing="15"
+                      prefWidth="300"/>
+
+                <Pane VBox.vgrow="ALWAYS"/>
+
+                <!-- Total -->
+
+                <Label fx:id="totalLabel"
+                       text="Total : ₹0"
+                       styleClass="total-text"/>
+
+                <!-- Checkout -->
+
+                <Button text="Proceed To Payment"
+                        onAction="#goToPayment"
+                        prefWidth="260"
+                        prefHeight="50"
+                        styleClass="checkout-btn"/>
+
+            </children>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>

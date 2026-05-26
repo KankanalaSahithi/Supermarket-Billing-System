@@ -1,0 +1,112 @@
+.root{
+
+    -fx-font-family: "Poppins";
+
+    -fx-background-color: #f3f4f6;
+}
+
+/* Heading */
+
+.heading{
+
+    -fx-font-size: 34px;
+
+    -fx-font-weight: bold;
+}
+
+/* Payment buttons */
+
+.pay-option{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+
+    -fx-pref-width: 300;
+
+    -fx-pref-height: 70;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    10,0,0,4);
+}
+
+.pay-option:hover{
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+/* Summary Card */
+
+.summary-card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 25;
+
+    -fx-padding: 30;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    15,0,0,6);
+}
+
+/* Summary Heading */
+
+.summary-heading{
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+}
+
+/* Summary Text */
+
+.summary-text{
+
+    -fx-font-size: 18px;
+}
+
+/* Total */
+
+.total-text{
+
+    -fx-font-size: 30px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #2563eb;
+}
+
+/* Pay Button */
+
+.pay-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#00c853,#64dd17);
+
+    -fx-background-radius: 30;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+}
+
+.pay-btn:hover{
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0"
+            prefWidth="1000.0"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../styles/style.css">
+
+    <children>
+
+        <!-- Background Image -->
+        <ImageView fitHeight="600"
+                   fitWidth="1000">
+
+            <image>
+                <Image url="@../images/bg.jpg"/>
+            </image>
+
+        </ImageView>
+
+        <!-- Dark Overlay -->
+        <Pane prefHeight="600"
+              prefWidth="1000"
+              styleClass="overlay"/>
+
+        <!-- Login Card -->
+        <Pane layoutX="300"
+              layoutY="110"
+              prefHeight="380"
+              prefWidth="400"
+              styleClass="login-pane">
+
+            <children>
+
+                <Label layoutX="110"
+                       layoutY="40"
+                       text="SMART MART"
+                       styleClass="title"/>
+
+                <Label layoutX="135"
+                       layoutY="80"
+                       text="Billing System"
+                       styleClass="subtitle"/>
+
+                <TextField layoutX="75"
+                           layoutY="150"
+                           prefHeight="45"
+                           prefWidth="250"
+                           promptText="Username"
+                           styleClass="input"/>
+
+                <PasswordField layoutX="75"
+                               layoutY="220"
+                               prefHeight="45"
+                               prefWidth="250"
+                               promptText="Password"
+                               styleClass="input"/>
+
+                <Button layoutX="130"
+                        layoutY="300"
+                        prefHeight="45"
+                        prefWidth="140"
+                        text="LOGIN"
+                        styleClass="login-btn"/>
+
+            </children>
+
+        </Pane>
+
+    </children>
+
+</AnchorPane>

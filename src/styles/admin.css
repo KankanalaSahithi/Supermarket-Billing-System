@@ -1,0 +1,164 @@
+.root{
+
+    -fx-font-family: "Poppins";
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    -fx-background-color: #111827;
+
+    -fx-padding: 30;
+
+    -fx-spacing: 20;
+}
+
+/* Logo */
+
+.logo{
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+}
+
+/* Menu Buttons */
+
+.menu-btn{
+
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #d1d5db;
+
+    -fx-font-size: 16px;
+
+    -fx-alignment: CENTER-LEFT;
+
+    -fx-cursor: hand;
+}
+
+.menu-btn:hover{
+
+    -fx-background-color: #1f2937;
+
+    -fx-background-radius: 12;
+
+    -fx-text-fill: white;
+}
+
+/* Main Area */
+
+.main-area{
+
+    -fx-background-color: #f3f4f6;
+}
+
+/* Heading */
+
+.heading{
+
+    -fx-font-size: 34px;
+
+    -fx-font-weight: bold;
+}
+
+/* Cards */
+
+.card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-padding: 25;
+
+    -fx-spacing: 15;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    10,0,0,4);
+}
+
+.card:hover{
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+/* Card Title */
+
+.card-title{
+
+    -fx-font-size: 18px;
+
+    -fx-text-fill: #6b7280;
+}
+
+/* Card Value */
+
+.card-value{
+
+    -fx-font-size: 32px;
+
+    -fx-font-weight: bold;
+}
+
+/* Inventory Box */
+
+.inventory-box{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-padding: 25;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    10,0,0,4);
+}
+
+/* Inventory Heading */
+
+.inventory-heading{
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+}
+
+/* Add Button */
+
+.add-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#00c853,#64dd17);
+
+    -fx-text-fill: white;
+
+    -fx-background-radius: 25;
+
+    -fx-font-size: 15px;
+
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+}
+
+/* Inventory Row */
+
+.inventory-row{
+
+    -fx-background-color: #f9fafb;
+
+    -fx-background-radius: 15;
+
+    -fx-padding: 15;
+
+    -fx-alignment: center-left;
+}

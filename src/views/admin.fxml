@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="controllers.AdminController"
+            prefHeight="700"
+            prefWidth="1200"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../styles/admin.css">
+
+    <children>
+
+        <!-- Sidebar -->
+
+        <VBox prefWidth="240"
+              AnchorPane.topAnchor="0.0"
+              AnchorPane.bottomAnchor="0.0"
+              styleClass="sidebar">
+
+            <children>
+
+                <Label text="SMART MART"
+                       styleClass="logo"/>
+
+                <Button text="Dashboard"
+                        styleClass="menu-btn"/>
+
+                <Button text="Analytics"
+                        styleClass="menu-btn"/>
+
+                <Button text="Logout"
+                        onAction="#logout"
+                        styleClass="menu-btn"/>
+
+            </children>
+
+        </VBox>
+
+        <!-- Main Area -->
+
+        <AnchorPane layoutX="240"
+                    prefWidth="960"
+                    prefHeight="700"
+                    styleClass="main-area">
+
+            <children>
+
+                <!-- Heading -->
+
+                <Label layoutX="40"
+                       layoutY="30"
+                       text="Admin Dashboard"
+                       styleClass="heading"/>
+
+                <!-- Statistics Cards -->
+
+                <HBox layoutX="40"
+                      layoutY="100"
+                      spacing="25">
+
+                    <children>
+
+                        <!-- Revenue -->
+
+                        <VBox prefWidth="220"
+                              prefHeight="130"
+                              styleClass="card">
+
+                            <children>
+
+                                <Label text="Revenue"
+                                       styleClass="card-title"/>
+
+                                <Label text="₹15,000"
+                                       styleClass="card-value"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- Orders -->
+
+                        <VBox prefWidth="220"
+                              prefHeight="130"
+                              styleClass="card">
+
+                            <children>
+
+                                <Label text="Orders"
+                                       styleClass="card-title"/>
+
+                                <Label text="125"
+                                       styleClass="card-value"/>
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- Products -->
+
+                        <VBox prefWidth="220"
+                              prefHeight="130"
+                              styleClass="card">
+
+                            <children>
+
+                                <Label text="Products"
+                                       styleClass="card-title"/>
+
+                                <Label text="6"
+                                       styleClass="card-value"/>
+
+                            </children>
+
+                        </VBox>
+
+                    </children>
+
+                </HBox>
+
+                <!-- Inventory Section -->
+
+                <ScrollPane layoutX="40"
+                    layoutY="300"
+                    prefWidth="820"
+                    prefHeight="320"
+                    fitToWidth="true"
+                    style="-fx-background-color: transparent;">
+
+            <content>
+
+                <VBox fx:id="inventoryContainer"
+                    spacing="20"
+                    styleClass="inventory-box">
+
+                    <children>
+
+                        <HBox spacing="20">
+
+                            <children>
+
+                                <Label text="Inventory"
+                                       styleClass="inventory-heading"/>
+
+                                <Pane HBox.hgrow="ALWAYS"/>
+
+                                <Button text="+ Add Product"
+                                        onAction="#showAddProductDialog"
+                                        styleClass="add-btn"/>
+
+                            </children>
+
+                        </HBox>
+
+                        <!-- Sample Products -->
+
+                        <!-- Lays -->
+
+                        <HBox spacing="80"
+                            styleClass="inventory-row">
+
+                            <children>
+
+                                <Label text="Lays"/>
+
+                                <Label text="₹20"/>
+
+                                <Label text="Stock : 40"/>
+
+                            </children>
+
+                        </HBox>
+
+                        <!-- Eggs -->
+
+                        <HBox spacing="80"
+                            styleClass="inventory-row">
+
+                            <children>
+
+                                <Label text="Fresh Eggs"/>
+
+                                <Label text="₹40"/>
+
+                                <Label text="Stock : 25"/>
+
+                            </children>
+
+                        </HBox>
+
+                        <!-- Detergent -->
+
+                        <HBox spacing="80"
+                            styleClass="inventory-row">
+
+                            <children>
+
+                                <Label text="Detergent"/>
+
+                                <Label text="₹360"/>
+
+                                <Label text="Stock : 15"/>
+
+                            </children>
+
+                        </HBox>
+
+                        <!-- Baby Soap -->
+
+                        <HBox spacing="80"
+                            styleClass="inventory-row">
+
+                            <children>
+
+                                <Label text="Baby Soap"/>
+
+                                <Label text="₹40"/>
+
+                                <Label text="Stock : 30"/>
+
+                            </children>
+
+                        </HBox>
+
+                        <!-- Crispello -->
+
+                        <HBox spacing="80"
+                            styleClass="inventory-row">
+
+                            <children>
+
+                                <Label text="Crispello"/>
+
+                                <Label text="₹20"/>
+
+                                <Label text="Stock : 50"/>
+
+                            </children>
+
+                        </HBox>
+
+                        <!-- Potato -->
+
+                        <HBox spacing="80"
+                            styleClass="inventory-row">
+
+                            <children>
+
+                                <Label text="Potato"/>
+
+                                <Label text="₹30"/>
+
+                                <Label text="Stock : 60"/>
+
+                            </children>
+
+                        </HBox>
+
+                    </children>
+
+        </VBox>
+
+    </content>
+
+</ScrollPane>
+
+            </children>
+
+        </AnchorPane>
+
+    </children>
+
+</AnchorPane>

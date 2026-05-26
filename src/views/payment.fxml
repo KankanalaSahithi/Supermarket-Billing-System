@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane 
+            fx:controller="controllers.PaymentController"
+            prefHeight="700"
+            prefWidth="1200"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../styles/payment.css">
+
+    <children>
+
+        <!-- Left Side -->
+
+        <VBox layoutX="50"
+              layoutY="40"
+              spacing="25">
+
+            <children>
+
+                <Label text="Payment"
+                       styleClass="heading"/>
+
+                <!-- Payment Options -->
+
+                <VBox spacing="20">
+
+                    <children>
+
+                        <Button text="UPI Payment"
+                                styleClass="pay-option"/>
+
+                        <Button text="Card Payment"
+                                styleClass="pay-option"/>
+
+                        <Button text="Cash Payment"
+                                styleClass="pay-option"/>
+
+                    </children>
+
+                </VBox>
+
+            </children>
+
+        </VBox>
+
+        <!-- Right Summary Card -->
+
+        <VBox layoutX="700"
+              layoutY="120"
+              prefWidth="350"
+              prefHeight="400"
+              spacing="20"
+              styleClass="summary-card">
+
+            <children>
+
+                <Label text="Order Summary"
+                       styleClass="summary-heading"/>
+
+                <Separator/>
+
+                <Label fx:id="itemsLabel"
+                    text="Items : 0"
+                    styleClass="summary-text"/>
+
+                <Label fx:id="subtotalLabel"
+                    text="Subtotal : ₹0"
+                    styleClass="summary-text"/>
+
+                <Label fx:id="gstLabel"
+                       text="GST : ₹0"
+                       styleClass="summary-text"/>
+
+                <Separator/>
+
+                <Label fx:id="totalAmountLabel"
+                       text="Total : ₹0"
+                       styleClass="total-text"/>
+
+                <Pane VBox.vgrow="ALWAYS"/>
+
+                <Button text="PAY NOW"
+                        onAction="#goToReceipt"
+                        prefHeight="50"
+                        prefWidth="250"
+                        styleClass="pay-btn"/>
+
+            </children>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>

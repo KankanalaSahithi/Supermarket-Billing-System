@@ -1,0 +1,88 @@
+.root{
+    -fx-font-family: "Poppins";
+}
+
+/* Dark overlay */
+.overlay{
+
+    -fx-background-color:
+    rgba(0,0,0,0.45);
+}
+
+/* Glass card */
+.login-pane{
+
+    -fx-background-color:
+    rgba(255,255,255,0.12);
+
+    -fx-background-radius: 25;
+
+    -fx-border-radius: 25;
+
+    -fx-border-color:
+    rgba(255,255,255,0.2);
+
+    -fx-border-width: 1.5;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.5),
+    30,0,0,10);
+}
+
+/* Main title */
+.title{
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 30px;
+
+    -fx-font-weight: bold;
+}
+
+/* Subtitle */
+.subtitle{
+
+    -fx-text-fill: #dcdcdc;
+
+    -fx-font-size: 15px;
+}
+
+/* Inputs */
+.input{
+
+    -fx-background-color:
+    rgba(255,255,255,0.9);
+
+    -fx-background-radius: 12;
+
+    -fx-font-size: 14px;
+
+    -fx-padding: 12;
+}
+
+/* Login button */
+.login-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#00c6ff,#0072ff);
+
+    -fx-background-radius: 30;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+}
+
+/* Hover animation */
+.login-btn:hover{
+
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+
+    -fx-opacity: 0.9;
+}

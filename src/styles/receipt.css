@@ -1,0 +1,97 @@
+.root{
+
+    -fx-background-color: #f3f4f6;
+
+    -fx-font-family: "Poppins";
+}
+
+/* Receipt Card */
+
+.receipt-card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 25;
+
+    -fx-padding: 35;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    15,0,0,6);
+}
+
+/* Success */
+
+.success-text{
+
+    -fx-text-fill: #16a34a;
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+}
+
+/* Store */
+
+.store-name{
+
+    -fx-font-size: 32px;
+
+    -fx-font-weight: bold;
+}
+
+/* Receipt text */
+
+.receipt-text{
+
+    -fx-font-size: 18px;
+}
+
+/* Total */
+
+.total-text{
+
+    -fx-font-size: 30px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #2563eb;
+}
+
+/* Thank text */
+
+.thank-text{
+
+    -fx-font-size: 22px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #ec4899;
+}
+
+/* Back Button */
+
+.back-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#2563eb,#7c3aed);
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 25;
+
+    -fx-pref-height: 45;
+
+    -fx-cursor: hand;
+}
+
+.back-btn:hover{
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}

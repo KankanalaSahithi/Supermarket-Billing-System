@@ -1,0 +1,101 @@
+.root{
+
+    -fx-font-family: "Poppins";
+}
+
+/* Left Side */
+
+.left-panel{
+
+    -fx-background-color:
+    linear-gradient(to bottom right,#2563eb,#7c3aed);
+
+    -fx-alignment: center;
+
+    -fx-spacing: 20;
+}
+
+/* Logo */
+
+.logo{
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 42px;
+
+    -fx-font-weight: bold;
+}
+
+/* Tagline */
+
+.tagline{
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 18px;
+}
+
+/* Login Card */
+
+.login-card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 25;
+
+    -fx-padding: 35;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.15),
+    15,0,0,6);
+}
+
+/* Heading */
+
+.heading{
+
+    -fx-font-size: 32px;
+
+    -fx-font-weight: bold;
+}
+
+/* Inputs */
+
+.input-field{
+
+    -fx-pref-height: 45;
+
+    -fx-background-radius: 15;
+
+    -fx-font-size: 14px;
+}
+
+/* Login Button */
+
+.login-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#2563eb,#7c3aed);
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 25;
+
+    -fx-pref-height: 45;
+
+    -fx-cursor: hand;
+}
+
+/* Message */
+
+.message-text{
+
+    -fx-text-fill: red;
+
+    -fx-font-size: 14px;
+}

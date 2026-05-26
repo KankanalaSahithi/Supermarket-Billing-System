@@ -1,0 +1,137 @@
+.root{
+    -fx-font-family: "Poppins";
+}
+
+/* Main Area */
+
+.main-area{
+
+    -fx-background-color: #f3f4f6;
+}
+
+/* Heading */
+
+.heading{
+
+    -fx-font-size: 30px;
+
+    -fx-font-weight: bold;
+}
+
+/* Search */
+
+.search-field{
+
+    -fx-background-radius: 15;
+
+    -fx-font-size: 14px;
+}
+
+/* Product Card */
+
+.product-card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-padding: 20;
+
+    -fx-spacing: 12;
+
+    -fx-alignment: center;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    10,0,0,4);
+}
+
+.product-card:hover{
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+/* Product Name */
+
+.product-name{
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+/* Price */
+
+.product-price{
+
+    -fx-font-size: 16px;
+
+    -fx-text-fill: #2563eb;
+}
+
+/* Add Button */
+
+.cart-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#00c6ff,#0072ff);
+
+    -fx-text-fill: white;
+
+    -fx-background-radius: 20;
+
+    -fx-cursor: hand;
+}
+
+/* Cart Panel */
+
+.cart-panel{
+
+    -fx-background-color: #111827;
+
+    -fx-padding: 30;
+
+    -fx-spacing: 20;
+}
+
+/* Cart Heading */
+
+.cart-heading{
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+}
+
+/* Total */
+
+.total-text{
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 22px;
+
+    -fx-font-weight: bold;
+}
+
+/* Checkout Button */
+
+.checkout-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#00c853,#64dd17);
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 25;
+
+    -fx-cursor: hand;
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="700"
+            prefWidth="1200"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.LoginController"
+            stylesheets="@../styles/login.css">
+
+    <children>
+
+        <!-- Left Panel -->
+
+        <VBox prefWidth="600"
+              prefHeight="700"
+              styleClass="left-panel">
+
+            <children>
+
+                <Label text="SMART MART"
+                       styleClass="logo"/>
+
+                <Label text="Supermarket Billing System"
+                       styleClass="tagline"/>
+
+            </children>
+
+        </VBox>
+
+        <!-- Right Login Card -->
+
+        <VBox layoutX="700"
+              layoutY="140"
+              prefWidth="350"
+              prefHeight="400"
+              spacing="20"
+              styleClass="login-card">
+
+            <children>
+
+                <Label text="Login"
+                       styleClass="heading"/>
+
+                <!-- Username -->
+
+                <TextField fx:id="usernameField"
+                           promptText="Username"
+                           styleClass="input-field"/>
+
+                <!-- Password -->
+
+                <PasswordField fx:id="passwordField"
+                               promptText="Password"
+                               styleClass="input-field"/>
+
+                <!-- Role -->
+
+                <ComboBox fx:id="roleBox"
+                          promptText="Select Role"
+                          styleClass="input-field">
+
+                    <items>
+
+                        <FXCollections fx:factory="observableArrayList">
+
+                            <String fx:value="Admin"/>
+                            <String fx:value="Customer"/>
+
+                        </FXCollections>
+
+                    </items>
+
+                </ComboBox>
+
+                <!-- Login Button -->
+
+                <Button text="LOGIN"
+                        onAction="#login"
+                        styleClass="login-btn"/>
+
+                <!-- Message -->
+
+                <Label fx:id="messageLabel"
+                       styleClass="message-text"/>
+
+            </children>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>

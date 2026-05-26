@@ -1,0 +1,177 @@
+.root{
+    -fx-font-family: "Poppins";
+}
+
+/* Sidebar */
+.sidebar{
+
+    -fx-background-color: #111827;
+
+    -fx-padding: 30 20;
+    -fx-spacing: 20;
+}
+
+/* Logo */
+.logo{
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 24px;
+
+    -fx-font-weight: bold;
+}
+
+/* Menu buttons */
+.menu-btn{
+
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #d1d5db;
+
+    -fx-font-size: 15px;
+
+    -fx-alignment: CENTER-LEFT;
+
+    -fx-pref-width: 180;
+
+    -fx-cursor: hand;
+}
+
+.menu-btn:hover{
+
+    -fx-background-color: #1f2937;
+
+    -fx-background-radius: 10;
+
+    -fx-text-fill: white;
+}
+
+/* Main area */
+.main-area{
+
+    -fx-background-color: #f3f4f6;
+}
+
+/* Topbar */
+.topbar{
+
+    -fx-alignment: CENTER-LEFT;
+}
+
+/* Heading */
+.heading{
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #111827;
+}
+
+/* Dashboard cards */
+.card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-padding: 20;
+
+    -fx-spacing: 15;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    10,0,0,4);
+}
+
+.card:hover{
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+/* Card text */
+.card-title{
+
+    -fx-text-fill: #6b7280;
+
+    -fx-font-size: 15px;
+}
+
+.card-value{
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #111827;
+}
+/* Section heading */
+.section-title{
+
+    -fx-font-size: 24px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #111827;
+}
+
+/* Product card */
+.product-card{
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-padding: 20;
+
+    -fx-spacing: 12;
+
+    -fx-alignment: center;
+
+    -fx-effect:
+    dropshadow(gaussian,
+    rgba(0,0,0,0.1),
+    10,0,0,4);
+}
+
+.product-card:hover{
+
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+}
+
+/* Product name */
+.product-name{
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+/* Product price */
+.product-price{
+
+    -fx-font-size: 16px;
+
+    -fx-text-fill: #2563eb;
+}
+
+/* Cart button */
+.cart-btn{
+
+    -fx-background-color:
+    linear-gradient(to right,#00c6ff,#0072ff);
+
+    -fx-text-fill: white;
+
+    -fx-background-radius: 20;
+
+    -fx-cursor: hand;
+}
+
+.cart-btn:hover{
+
+    -fx-opacity: 0.85;
+}
