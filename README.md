@@ -58,7 +58,7 @@ A modern JavaFX-based supermarket billing system with separate Admin and Custome
 
 ---
 
-# 🔑 Login Credentials
+# 🔑 Predefined Login Credentials
 
 ## Admin
 
